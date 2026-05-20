@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.68in]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+
+\setCJKmainfont{Pretendard}[
+  Path=fonts/pretendard/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-SemiBold
+]
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.35em,itemsep=3pt,topsep=5pt,parsep=0pt,partopsep=0pt,after=\vspace{4pt}}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+
+\newcommand{\cvheader}[2]{%
+  {\LARGE\bfseries #1}\par\vspace{6pt}
+  {\normalsize #2}\par\vspace{8pt}
+}
+
+\newcommand{\entry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \\
+  \end{tabularx}\vspace{1pt}
+}
+
+\newcommand{\project}[2]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}\vspace{1pt}
+}
+
+\begin{document}
+
+\cvheader{Suh Donghwi (서동휘)}{\href{mailto:suhdonghwi@kaist.ac.kr}{suhdonghwi@kaist.ac.kr}}
+
+\section{Education}
+\entry{KAIST (Korea Advanced Institute of Science and Technology)}{Feb. 2022 -- Present}{B.S. in School of Computing (GPA 3.90/4.30)}
+\begin{itemize}
+  \item Activities: ICISTS, an academic conference student club.
+\end{itemize}
+
+\section{Work Experience}
+\entry{Viva Republica (Toss)}{Sep. 2023 -- Dec. 2025}{Frontend Engineer, Platform Engineer}
+\begin{itemize}
+  \item Developed the advertiser-facing DSP for \href{https://tossads.toss.im/}{Toss Ads}.
+  \item Built a shared banner advertising SDK for group affiliates.
+  \item Maintained and built 10+ consumer-facing benefit services.
+  \item Developed a company-wide web framework based on Next.js.
+\end{itemize}
+
+\section{Projects}
+\project{orirang (\href{https://orirang.com}{orirang.com})}{}
+\begin{itemize}
+  \item Course planning and graduation requirement management website for KAIST undergraduates.
+  \item Mechanized graduation requirements for 21 academic units.
+\end{itemize}
+
+\project{nuri (\href{https://github.com/suhdonghwi/nuri}{github.com/suhdonghwi/nuri})}{}
+\begin{itemize}
+  \item A purely functional programming language that applies characteristics of Korean grammar.
+  \item Implemented in Haskell and the RPython toolkit.
+\end{itemize}
+
+\project{qubit (\href{https://github.com/suhdonghwi/qubit}{github.com/suhdonghwi/qubit})}{}
+\begin{itemize}
+  \item An interactive website explaining quantum computing concepts and principles with 3D graphics.
+  \item Built with React and Three.js.
+\end{itemize}
+
+\end{document}

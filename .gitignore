@@ -1,0 +1,7 @@
+dist/*.aux
+dist/*.fdb_latexmk
+dist/*.fls
+dist/*.log
+dist/*.out
+dist/*.synctex.gz
+dist/*.xdv
