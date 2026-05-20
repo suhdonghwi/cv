@@ -5,3 +5,5 @@ dist/*.log
 dist/*.out
 dist/*.synctex.gz
 dist/*.xdv
+
+.DS_Store
