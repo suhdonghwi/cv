@@ -1,9 +1,9 @@
-dist/*.aux
-dist/*.fdb_latexmk
-dist/*.fls
-dist/*.log
-dist/*.out
-dist/*.synctex.gz
-dist/*.xdv
+/*.aux
+/*.fdb_latexmk
+/*.fls
+/*.log
+/*.out
+/*.synctex.gz
+/*.xdv
 
 .DS_Store
